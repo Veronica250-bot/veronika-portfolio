@@ -269,4 +269,9 @@ overview:
   ],
 },
 
-]
+].map((project) => ({
+  ...project,
+  images: project.images.map(
+    (src) => `${import.meta.env.BASE_URL}${src.replace(/^\/+/, '')}`
+  ),
+}))

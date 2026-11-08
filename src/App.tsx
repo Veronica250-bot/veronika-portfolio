@@ -223,7 +223,7 @@ function App() {
 
   {/* Original avatar */}
   <img
-    src="/avatar.png"
+    src={`${import.meta.env.BASE_URL}avatar.png`}
     alt="Veronika's 3D avatar"
     className="avatar"
   />
@@ -249,7 +249,7 @@ function App() {
 
   <img
     className="floating-3d-flower"
-    src="/decorations/pink-flower.png"
+    src={`${import.meta.env.BASE_URL}decorations/pink-flower.png`}
     alt=""
     aria-hidden="true"
   />
@@ -492,7 +492,7 @@ function App() {
   <h2>Curiosity first. People always.</h2>
 
   <img
-    src="/decorations/glass-orb.png"
+    src={`${import.meta.env.BASE_URL}decorations/glass-orb.png`}
     alt=""
     aria-hidden="true"
     className="floating-3d-orb"
@@ -549,13 +549,14 @@ function App() {
   <p>Explore my experience, education and motivation.</p>
 
   <div className="document-links">
-    <a href="/documents/veronika-cv.pdf" target="_blank" rel="noopener noreferrer">
+    <a href={`${import.meta.env.BASE_URL}documents/veronika-cv.pdf`} target="_blank" rel="noopener noreferrer">
       <span>↗</span>
       <strong>View CV</strong>
       <small>Curriculum Vitae · PDF</small>
     </a>
 
-    <a href="/documents/veronika-cover-letter.pdf" target="_blank" rel="noopener noreferrer">
+    
+<a href={`${import.meta.env.BASE_URL}documents/veronika-cover-letter.pdf`} target="_blank" rel="noopener noreferrer">
       <span>↗</span>
       <strong>Cover Letter</strong>
       <small>Introduction & motivation · PDF</small>
@@ -627,7 +628,7 @@ function App() {
   <h2>Let's make something meaningful.</h2>
 
   <img
-    src="/decorations/chrome-star.png"
+    src={`${import.meta.env.BASE_URL}decorations/chrome-star.png`}
     alt=""
     aria-hidden="true"
     className="floating-3d-star"
@@ -2353,7 +2354,7 @@ function App() {
   </div>
 
   <a
-    href="/documents/rendi-website-layout.pdf"
+    href={`${import.meta.env.BASE_URL}documents/rendi-website-layout.pdf`}
     target="_blank"
     rel="noopener noreferrer"
     className="thesis-link-button"
